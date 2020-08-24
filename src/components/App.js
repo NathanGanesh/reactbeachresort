@@ -1,9 +1,16 @@
 import React from 'react';
 import './App.css';
+import Navbar from './Navbar';
+import HeroHeader from './HeroHeader';
+import Services from './Services';
+import FeaturedRooms from './FeaturedRooms';
 function App() {
 	return (
 		<div>
-			<h2>ok</h2>
+			<Navbar />
+			<HeroHeader />
+			<Services />
+			<FeaturedRooms />
 		</div>
 	);
 }
