@@ -5,6 +5,7 @@
 }
 
 .nav-bar {
+	display: block;
 	display: flex;
 	width: 100%;
 	justify-content: flex-start;
@@ -25,19 +26,20 @@
 
 .hero-component {
 	background-color: rgba(70, 66, 61, 0.7);
-	width: 40%;
+	width: 50%;
 	height: 250px;
 	display: flex;
 	flex-direction: column;
 	display: inline-block;
 	text-align: center;
 	position: absolute;
-	top: 50%;
+	top: 30%;
 	left: 50%;
+	padding-top: 125px;
 	transform: translate(-50%, -50%);
 	padding: 18px;
 	color: white;
-	font-size: 22px;
+	font-size: 24px;
 }
 
 .hero-component p {
@@ -54,7 +56,8 @@
 
 #hero-image {
 	width: 100%;
-	height: 720px;
+	height: 60vh;
+	display: block;
 }
 
 #services-title {
@@ -78,10 +81,7 @@
 }
 .services {
 	background-color: wheat;
-}
-
-.hero {
-	height: 715px;
+	width: 100%;
 }
 
 .featured-rooms {
@@ -99,18 +99,119 @@
 }
 
 .single-room img {
-	width: 250px;
-	height: 150px;
+	position: relative;
+	width: 350px;
+	height: 250px;
 }
-/* 
-.single-room :hover {
-	background-color: rgba(70, 66, 61, 0.7);
-} */
 
-.single-room {
-	box-shadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+.room-image-wrap {
+	position: relative;
+}
+
+.loading {
+	text-transform: capitalize;
+	text-align: center;
+	margin-top: 3rem;
+}
+
+.featured-rooms {
+	display: flex;
+	flex-direction: column;
+}
+.featured-rooms-center {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	/* padding-left: 20px; */
+}
+.room {
+	padding: 17px;
+}
+
+/* .image-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+} */
+.img-container {
+	position: relative;
+}
+.img-container img {
+	width: 100%;
+	display: block;
+}
+
+.price-top {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.8);
+	color: #fff;
+	padding: 0.3rem 0.6rem 0.5rem;
+	border-bottom-right-radius: 1rem;
+	font-size: 0.5rem;
+	text-align: center;
+}
+.price-top h6 {
+	margin-bottom: 0;
+	font-size: 0.9rem;
+	font-weight: 300;
+}
+
+.btn-primary {
+	display: inline-block;
+	text-decoration: none;
+	letter-spacing: 3px;
+	color: #222;
+	background: #af9a7d;
+	padding: 0.4rem 0.9rem;
+	border: 3px solid #af9a7d;
+	transition: all 0.3s linear;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+.btn-primary:hover {
+	background: transparent;
+	color: #af9a7d;
+}
+
+.room-link {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: scale(0);
 	transition: all 0.3s linear;
 }
-.single-room:hover {
-	box-shadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+.img-container:hover {
+	background: rgba(0, 0, 0, 0.8);
+}
+.img-container:hover img {
+	opacity: 0.3;
+}
+.img-container:hover .price-top {
+	opacity: 0;
+}
+.img-container:hover .room-link {
+	transform: translate(-50%, -50%) scale(1);
+}
+
+.room-info {
+	background: #cfcfcf;
+	text-transform: capitalize;
+	padding: 0.5rem 0;
+	text-align: center;
+	font-weight: 700;
+	letter-spacing: 3px;
+}
+
+.error {
+	text-align: center;
+	text-transform: uppercase;
+	margin: 2rem 0;
+}
+.error h3 {
+	padding-bottom: 25px;
 }

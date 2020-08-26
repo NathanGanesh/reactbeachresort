@@ -3,11 +3,12 @@ import React from 'react';
 export default function Navbar() {
 	return (
 		<nav className="nav-bar">
-			<img src={require('./images/logo.svg')} alt="logo" />
-
+			<a href="/">
+				<img src={require('./images/logo.svg')} alt="logo" />
+			</a>
 			<div>
-				<a href="/html/">Home</a>
-				<a href="/css/">Rooms</a>
+				<a href="/">Home</a>
+				<a href="/rooms/">Rooms</a>
 			</div>
 		</nav>
 	);

@@ -4,7 +4,7 @@ import { FaCocktail, FaHiking, FaShuttleVan, FaBeer } from 'react-icons/fa';
 
 export default function Services() {
 	return (
-		<div class="services">
+		<div className="services">
 			<h2 id="services-title">Services</h2>
 			<div className="services-component">
 				<ServicesComponent

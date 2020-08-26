@@ -1,5 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { RoomProvider } from './Context';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+	<RoomProvider>
+		<Router>
+			<App />
+		</Router>
+	</RoomProvider>,
+	document.getElementById('root')
+);
